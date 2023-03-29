@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@/dist/98.css" />
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400;500&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="options1.css" />
+
     <title>Options</title>
   </head>
   <body>
@@ -20,90 +25,114 @@
         </div>
         <div class="window-body">
           <div>
-            <div class="btn-holder">
+            <div class="btn-holder row1">
               <button aria-controls="c" class="mybuttons">Color</button>
               <button aria-controls="i" class="mybuttons">International</button>
               <button aria-controls="s" class="mybuttons">Save</button>
-              <button aria-controls="e" class="mybuttons">Error Checking </button>
+              <button aria-controls="e" class="mybuttons">
+                Error Checking
+              </button>
               <button aria-controls="s" class="mybuttons">Spelling</button>
               <button aria-controls="s" class="mybuttons">Security</button>
             </div>
-            <div class="btn-holder">
-              <button autofocus aria-controls="v" class="view">View</button>
-              <button aria-controls="c" class="mybuttons">Calculation</button>
-              <button aria-controls="e" class="mybuttons">Edit</button>
-              <button aria-controls="g" class="mybuttons">General</button>
-              <button aria-controls="t" class="mybuttons">Transition</button>
-              <button aria-controls="c" class="mybuttons">Custom Lists</button>
-              <button aria-controls="c" class="mybuttons">Chart</button>
+            <div class="btn-holder row2">
+              <menu role="tablist" aria-label="Sample Tabs">
+                <button  aria-selected="true" aria-controls="tab-A"class="mybuttons view">View</button>
+                <button  aria-controls="c"class="mybuttons">Calculation</button>
+                <button  aria-controls="e"class="mybuttons">Edit</button>
+                <button  aria-controls="g"class="mybuttons">General</button>
+                <button  aria-controls="t"class="mybuttons">Transition</button>
+                <button  aria-controls="c"class="mybuttons">Custom Lists</button>
+                <button  aria-controls="c"class="mybuttons">Chart</button>
+              </menu>
             </div>
           </div>
           <article role="tabpanel" id="music">
-            <!-- <p>Set your listening preferences</p> -->
+          
             <div class="title">
               <legend>Show</legend>
-              <hr width="1000px" />
+              <hr>
             </div>
             <div class="box2">
               <div class="field-row">
-                <input id="radio29" type="checkbox" name="fieldset-example2" checked />
-                <label for="radio29">Start<u>u</u>p Task Pane</label>
+                <input
+                  id="radio29"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
+                <label for="radio29">Start<span class="underline">u</span>p Task Pane</label>
               </div>
               <div class="field-row">
-                <input id="radio30" type="checkbox" name="fieldset-example2" checked/>checked
-                <label for="radio30"><u>F</u>ormula bar</label>
+                <input
+                  id="radio30"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
+                <label for="radio30"><span class="underline">F</span>ormula bar</label>
               </div>
               <div class="field-row">
-                <input id="radio31" type="checkbox" name="fieldset-example2" checked/>
-                <label for="radio31"><u>S</u>tatus Bar</label>
+                <input
+                  id="radio31"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
+                <label for="radio31"><span class="underline">S</span>tatus Bar</label>
               </div>
               <div class="field-row">
-                <input id="radio32" type="checkbox" name="fieldset-example2" checked/>
-                <label for="radio32"><u>W</u>indows in Taskbar</label>
+                <input
+                  id="radio32"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
+                <label for="radio32"><span class="underline">W</span>indows in Taskbar</label>
               </div>
             </div>
 
             <div class="title">
               <legend>Comments</legend>
-              <hr>
+              <hr />
             </div>
             <div class="box">
               <div class="field-row none">
                 <input id="n" type="radio" name="fieldset-example2" />
-                <label for="n"> <u>N</u>one</label>
+                <label for="n"> <span class="underline">N</span>one</label>
               </div>
               <div class="field-row only">
-                <input id="c" type="radio" name="fieldset-example2" checked/>
-                <label for="c">Comment&nbsp;<u>i</u>ndicator only</label>
+                <input id="c" type="radio" name="fieldset-example2" checked />
+                <label for="c">Comment<span class="underline">i</span>ndicator only</label>
               </div>
               <div class="field-row indicator">
                 <input id="i" type="radio" name="fieldset-example2" />
-                <label for="i">Co<u>m</u>ment indicator</label>
+                <label for="i">Co<span class="underline">m</span>ment indicator</label>
               </div>
             </div>
 
             <div class="title">
               <legend>Objects</legend>
-              <hr>
+              <hr />
             </div>
             <div class="box">
               <div class="field-row show_all">
-                <input id="s" type="radio" name="fieldset-example2" checked/>
-                <label for="s">Show &nbsp; <u>a</u>ll</label>
+                <input id="s" type="radio" name="fieldset-example2" checked />
+                <label for="s">Show &nbsp; <span class="underline">a</span>ll</label>
               </div>
               <div class="field-row holder">
                 <input id="sp" type="radio" name="fieldset-example2" />
-                <label for="sp">Show &nbsp; <u>p</u>laceholders</label>
+                <label for="sp">Show &nbsp; <span class="underline">p</span>laceholders</label>
               </div>
               <div class="field-row hide">
                 <input id="h" type="radio" name="fieldset-example2" />
-                <label for="h">Hi<u>d</u>e all</label>
+                <label for="h">Hi<span class="underline">d</span>e all</label>
               </div>
             </div>
 
             <div class="title">
               <legend>Window&nbsp;Options</legend>
-              <hr>
+              <hr />
             </div>
             <div class="box1">
               <div class="field-row">
@@ -111,11 +140,21 @@
                 <label for="radio29">Page brea <u>k</u>s</label>
               </div>
               <div class="field-row">
-                <input id="radio30" type="checkbox" name="fieldset-example2" checked/>
+                <input
+                  id="radio30"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
                 <label for="radio30">Row & column h<u>e</u>aders</label>
               </div>
               <div class="field-row">
-                <input id="radio31" type="checkbox" name="fieldset-example2" checked/>
+                <input
+                  id="radio31"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
                 <label for="radio31">Horizon<u>t</u>al scroll bar</label>
               </div>
               <div class="field-row">
@@ -123,23 +162,48 @@
                 <label for="radio32">Fo <u>r</u>mulas</label>
               </div>
               <div class="field-row">
-                <input id="radio32" type="checkbox" name="fieldset-example2" checked/>
+                <input
+                  id="radio32"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
                 <label for="radio32"> <u>O</u>utline symbols</label>
               </div>
               <div class="field-row">
-                <input id="radio32" type="checkbox" name="fieldset-example2" checked/>
+                <input
+                  id="radio32"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
                 <label for="radio32"> <u>V</u>ertical scroll bar </label>
               </div>
               <div class="field-row">
-                <input id="radio32" type="checkbox" name="fieldset-example2" checked/>
+                <input
+                  id="radio32"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
                 <label for="radio32"><u>G</u>ridlines</label>
               </div>
               <div class="field-row">
-                <input id="radio32" type="checkbox" name="fieldset-example2" checked/>
+                <input
+                  id="radio32"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
                 <label for="radio32"><u>Z</u>ero Values</label>
               </div>
               <div class="field-row">
-                <input id="radio32" type="checkbox" name="fieldset-example2" checked/>
+                <input
+                  id="radio32"
+                  type="checkbox"
+                  name="fieldset-example2"
+                  checked
+                />
                 <label for="radio32">Sheet ta<u>b</u>s</label>
               </div>
 
@@ -154,10 +218,9 @@
                 </select>
               </div>
             </div>
-            
           </article>
           <section class="field-row1">
-            <button>OK</button>
+            <button class="ok">OK</button>
             <button>Cancel</button>
           </section>
         </div>
